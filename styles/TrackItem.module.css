@@ -1,0 +1,40 @@
+.trackitem {
+  list-style: none;
+  display: grid;
+  grid-template: 1.6em 1.6em / 3.2em 1fr;
+  grid-template-areas:
+    "img artist"
+    "img title";
+  grid-column-gap: 1em;
+}
+
+.trackimage {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.list {
+  margin: 1em;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.artist {
+  padding: 0;
+  margin: 0;
+  color: var (--secondary-text);
+}
+
+.trackitem .title {
+  align-self: end;
+}
+
+.trackitem .artist {
+  align-self: start;
+}
