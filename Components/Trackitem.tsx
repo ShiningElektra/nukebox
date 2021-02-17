@@ -8,10 +8,14 @@ type Props = {
 
 export default function TrackItem(props: Props) {
   return (
-    <article className={styles.trackitem}>
-      <img src={props.image} alt="Live at Berlin" />;
+    <li className={styles.trackitem}>
+      <img
+        className={styles.trackimage}
+        src={props.image}
+        alt="Live at Berlin"
+      />
       <p className={styles.title}>{props.title}</p>
       <p className={styles.artist}>{props.artist}</p>
-    </article>
+    </li>
   );
 }

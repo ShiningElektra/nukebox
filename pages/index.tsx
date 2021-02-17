@@ -11,16 +11,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Greeting name="Elektra" />
-      <TrackItem
-        image="/trackimage.jpg"
-        title="Get it done"
-        artist="The Destructures"
-      />
-      <TrackItem
-        image="/trackimage.jpg"
-        title="Lonley"
-        artist="The Destructures"
-      />
+      <ul>
+        <TrackItem
+          image="/trackimage.jpg"
+          title="Get it done"
+          artist="The Destructures"
+        />
+        <TrackItem
+          image="/trackimage.jpg"
+          title="Lonley"
+          artist="The Destructures"
+        />
+        <TrackItem
+          image="/trackimage.jpg"
+          title="Honey"
+          artist="The Destructures"
+        />
+      </ul>
     </div>
   );
 }
