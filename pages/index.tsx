@@ -32,7 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Greeting name="Elektra" />
-      <ul className={styles.list}> {trackItems}</ul>
+      <ul className={styles.list}>{trackItems}</ul>
     </div>
   );
 }

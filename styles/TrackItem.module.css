@@ -6,6 +6,7 @@
     "img artist"
     "img title";
   grid-column-gap: 1em;
+  margin-bottom: 1em;
 }
 
 .trackimage {
@@ -14,10 +15,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-}
-
-.list {
-  margin: 1em;
 }
 
 .title {

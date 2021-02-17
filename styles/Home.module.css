@@ -1,3 +1,9 @@
 .container {
   display: grid;
+  margin-left: 20;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
 }
