@@ -1,18 +1,18 @@
 import Head from "next/head";
+import { useEffect, useState } from "react";
 import Greeting from "../Components/Greeting";
 import TrackItem from "../Components/Trackitem";
 import styles from "../styles/Home.module.css";
+import { getTracks, APITrack } from "../utils/api";
 
 export default function Home() {
-  const tracks = [
-    {
-      image: "/trackimage.jpg",
-      title: "Get it done",
-      artist: "The Destructures",
-    },
-    { image: "/trackimage.jpg", title: "Lonely", artist: "The Destructures" },
-    { image: "/trackimage.jpg", title: "Honey", artist: "The Destructures" },
-  ];
+  const [tracks, setTracks] = useState<APITrack[]>([]);
+  useEffect(() => {
+    console.log("Mounted");
+    getTracks().then((newTracks) => {
+      setTracks(newTracks);
+    });
+  }, []);
 
   const trackItems = tracks.map((track) => {
     const key = `${track.artist}-${track.title}`;
