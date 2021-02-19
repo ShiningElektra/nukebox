@@ -1,0 +1,9 @@
+.container {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: space-around;
+  text-align: center;
+  grid-gap: 2em;
+  padding: 2em 2em;
+}

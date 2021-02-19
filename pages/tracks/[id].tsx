@@ -1,7 +1,10 @@
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
 import { APITrack, getTrack } from "../../utils/api";
-import SingleTrack from "../../Components/SingleTrack";
+import TrackPlayer from "../../Components/TrackPlayer";
+import HeaderPlayer from "../../Components/HeaderPlayer";
+import styles from "../../styles/Player.module.css";
+import ReactionPlayer from "../../Components/ReactionPlayer";
 
 export default function Track() {
   const router = useRouter();
@@ -19,11 +22,22 @@ export default function Track() {
     return <div>Loading...</div>;
   }
   return (
-    <SingleTrack
-      image={track.image}
-      title={track.title}
-      artist={track.artist}
-      audio={track.audio}
-    />
+    <div className={styles.container}>
+      <HeaderPlayer />
+      <main>
+        <TrackPlayer
+          image={track.image}
+          title={track.title}
+          artist={track.artist}
+          audio={track.audio}
+        />
+      </main>
+      <footer>
+        <div>
+          <ReactionPlayer />
+          <audio className={styles.player} controls src={track.audio} />
+        </div>
+      </footer>
+    </div>
   );
 }

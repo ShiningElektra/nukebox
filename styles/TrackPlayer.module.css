@@ -1,0 +1,18 @@
+.trackimage {
+  width: 95%;
+  grid-area: img;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.artist {
+  padding: 0;
+  margin: 0;
+  color: var(--secondary-text);
+}
