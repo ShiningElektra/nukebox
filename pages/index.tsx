@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Greeting from "../Components/Greeting";
 import TrackItem from "../Components/Trackitem";
@@ -14,17 +15,18 @@ export default function Home() {
     });
   }, []);
 
-  const trackItems = tracks.map((track) => {
-    const key = `${track.artist}-${track.title}`;
-    return (
-      <TrackItem
-        key={key}
-        image={track.image}
-        title={track.title}
-        artist={track.artist}
-      />
-    );
-  });
+  const trackItems = tracks.map((track) => (
+    <Link href={`/tracks/${track.id}`} key={track.id}>
+      <a>
+        <TrackItem
+          image={track.image}
+          title={track.title}
+          artist={track.artist}
+        />
+      </a>
+    </Link>
+  ));
+
   return (
     <div className={styles.container}>
       <Head>

@@ -1,0 +1,43 @@
+import { useRouter } from "next/dist/client/router";
+import { useEffect, useState } from "react";
+import { APITrack, getTrack } from "../../utils/api";
+import TrackPlayer from "../../Components/TrackPlayer";
+import HeaderPlayer from "../../Components/HeaderPlayer";
+import styles from "../../styles/Player.module.css";
+import ReactionPlayer from "../../Components/ReactionPlayer";
+
+export default function Track() {
+  const router = useRouter();
+  const { id } = router.query;
+
+  const [track, setTrack] = useState<APITrack>(null);
+  useEffect(() => {
+    console.log("Mounted");
+    getTrack(id).then((newTrack) => {
+      setTrack(newTrack);
+    });
+  }, [id]);
+
+  if (!track) {
+    return <div>Loading...</div>;
+  }
+  return (
+    <div className={styles.container}>
+      <HeaderPlayer />
+      <main>
+        <TrackPlayer
+          image={track.image}
+          title={track.title}
+          artist={track.artist}
+          audio={track.audio}
+        />
+      </main>
+      <footer>
+        <div>
+          <ReactionPlayer />
+          <audio className={styles.player} controls src={track.audio} />
+        </div>
+      </footer>
+    </div>
+  );
+}

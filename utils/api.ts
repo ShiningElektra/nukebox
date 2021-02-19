@@ -3,6 +3,7 @@ export type APITrack = {
   image: string;
   title: string;
   artist: string;
+  audio: string;
 };
 
 export async function getTracks() {
@@ -10,9 +11,9 @@ export async function getTracks() {
   const tracks: APITrack[] = await response.json();
   return tracks;
 }
-// - Alternative Schreibweise - (hat nicht funktioniert. tracks: war unterstrichen)
-// export async function getTracks(){
-// return fetch("/api/tracks")
-// .then((response) => response.json())
-// .then((tracks: APITrack[] => tracks));
-// }
+
+export async function getTrack(id) {
+  const response = await fetch(`/api/tracks/${id}`);
+  const track: APITrack = await response.json();
+  return track;
+}

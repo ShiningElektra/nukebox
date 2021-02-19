@@ -1,0 +1,10 @@
+.reaction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: space-around;
+  margin: 2em;
+}
+
+.reaction img {
+  justify-self: center;
+}

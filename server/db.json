@@ -1,16 +1,25 @@
 {
   "tracks": [
     {
-      "id": "scooter_paul-is-dead",
-      "image": "https://images.unsplash.com/photo-1613473060226-dd81153a63db?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "title": "Paul is Dead",
-      "artist": "Scooter"
+      "id": "BlackEyedPeas_BomBoomPow",
+      "image": "/BlackEyedPeas_BomBoomPow.jfif",
+      "title": "Bom Boom Pow",
+      "artist": "Black Eyed Peas",
+      "audio": "/Black Eyed Peas - Bom Boom Pow.mp3"
     },
     {
-      "id": "metallica_the-unforgiven",
-      "image": "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "title": "The Unforgiven",
-      "artist": "Metallica"
+      "id": "PeterFox_HausAmSee",
+      "image": "/PeterFox_HausAmSee.jpg",
+      "title": "Haus am See",
+      "artist": "Peter Fox",
+      "audio": "/Peter Fox - Haus am See.mp3"
+    },
+    {
+      "id": "WirSindHelden_BringMichNachHause",
+      "image": "/WirSindHelden_BringMichNachHause.jpg",
+      "title": "Bring mich nach Hause",
+      "artist": "Wir sind Helden",
+      "audio": ""
     }
   ]
 }
