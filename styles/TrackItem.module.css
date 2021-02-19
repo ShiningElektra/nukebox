@@ -25,7 +25,7 @@
 .artist {
   padding: 0;
   margin: 0;
-  color: var (--secondary-text);
+  color: var(--secondary-text);
 }
 
 .trackitem .title {
