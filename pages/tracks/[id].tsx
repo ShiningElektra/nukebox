@@ -23,7 +23,7 @@ export default function Track() {
       image={track.image}
       title={track.title}
       artist={track.artist}
-      audio={track.audioSrc}
+      audio={track.audio}
     />
   );
 }

@@ -4,6 +4,7 @@ type Props = {
   image: string;
   title: string;
   artist: string;
+  audio: string;
 };
 
 export default function SingleTrack(props: Props) {
