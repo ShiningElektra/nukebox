@@ -6,6 +6,7 @@ import HeaderPlayer from "../../Components/HeaderPlayer";
 import styles from "../../styles/Player.module.css";
 import ReactionPlayer from "../../Components/ReactionPlayer";
 import PlayerBar from "../../Components/PlayerBar";
+import AudioPlayer from "../../Components/AudioPlayer";
 
 export default function Track() {
   const router = useRouter();
@@ -36,7 +37,8 @@ export default function Track() {
       <footer>
         <>
           <ReactionPlayer />
-          <PlayerBar track={track} />
+          {/* <PlayerBar track={track} /> */}
+          <AudioPlayer track={track} />
         </>
       </footer>
     </div>
