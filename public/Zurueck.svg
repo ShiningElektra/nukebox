@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" id="Ebene_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="92.834" height="92.831"
+	 viewBox="0 0 92.834 92.831" overflow="visible" enable-background="new 0 0 92.834 92.831" xml:space="preserve">
+<g>
+	<g>
+		<linearGradient id="XMLID_7_" gradientUnits="userSpaceOnUse" x1="16.6655" y1="10.7861" x2="76.1692" y2="82.0437">
+			<stop  offset="0" style="stop-color:#A1A1A1"/>
+			<stop  offset="0.1842" style="stop-color:#B8B8B8"/>
+			<stop  offset="0.5395" style="stop-color:#DEDEDE"/>
+			<stop  offset="0.8239" style="stop-color:#F6F6F6"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<path fill="url(#XMLID_7_)" d="M46.417,4.89c22.9,0,41.53,18.628,41.53,41.525s-18.63,41.527-41.53,41.527
+			c-22.898,0-41.527-18.63-41.527-41.527S23.519,4.89,46.417,4.89 M46.417,0C20.782,0,0,20.78,0,46.415
+			c0,25.633,20.782,46.416,46.417,46.416c25.637,0,46.418-20.783,46.418-46.416C92.834,20.78,72.053,0,46.417,0L46.417,0z"/>
+		
+			<radialGradient id="XMLID_8_" cx="368.2231" cy="-739.1519" r="49.3225" gradientTransform="matrix(0.8434 0 0 0.8434 -264.0588 669.8995)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.8108" style="stop-color:#545454"/>
+			<stop  offset="0.842" style="stop-color:#565656"/>
+			<stop  offset="0.8594" style="stop-color:#5E5E5E"/>
+			<stop  offset="0.8733" style="stop-color:#6C6C6C"/>
+			<stop  offset="0.8855" style="stop-color:#808080"/>
+			<stop  offset="0.8965" style="stop-color:#999999"/>
+			<stop  offset="0.9066" style="stop-color:#B9B9B9"/>
+			<stop  offset="0.9159" style="stop-color:#DDDDDD"/>
+			<stop  offset="0.9195" style="stop-color:#EDEDED"/>
+			<stop  offset="0.9345" style="stop-color:#EAEAEA"/>
+			<stop  offset="0.9475" style="stop-color:#DFDFDF"/>
+			<stop  offset="0.9597" style="stop-color:#CDCDCD"/>
+			<stop  offset="0.9715" style="stop-color:#B4B4B4"/>
+			<stop  offset="0.9829" style="stop-color:#949494"/>
+			<stop  offset="0.9939" style="stop-color:#6D6D6D"/>
+			<stop  offset="1" style="stop-color:#545454"/>
+		</radialGradient>
+		<path fill="url(#XMLID_8_)" d="M46.5,10.259c19.984,0,36.245,16.257,36.245,36.24c0,19.984-16.261,36.241-36.245,36.241
+			c-19.983,0-36.242-16.257-36.242-36.241C10.258,26.516,26.517,10.259,46.5,10.259 M46.5,4.901c-22.973,0-41.6,18.624-41.6,41.598
+			c0,22.975,18.627,41.597,41.6,41.597c22.977,0,41.6-18.622,41.6-41.597C88.1,23.525,69.477,4.901,46.5,4.901L46.5,4.901z"/>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="4.9" y="4.901" width="83.2" height="83.194">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="4.9" y="4.901" width="83.2" height="83.194" id="XMLID_9_">
+			<g filter="url(#Adobe_OpacityMaskFilter)">
+				<rect x="-52.903" y="-21.657" fill="#FFFFFF" width="165.27" height="153.557"/>
+			</g>
+		</mask>
+		
+			<radialGradient id="XMLID_10_" cx="504.7622" cy="-991.02" r="66.6216" gradientTransform="matrix(0.6244 0 0 0.6244 -268.6732 665.2922)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.8108" style="stop-color:#8A4000"/>
+			<stop  offset="0.84" style="stop-color:#8B4200"/>
+			<stop  offset="0.8562" style="stop-color:#904A00"/>
+			<stop  offset="0.8693" style="stop-color:#995800"/>
+			<stop  offset="0.8807" style="stop-color:#A56C00"/>
+			<stop  offset="0.8909" style="stop-color:#B48500"/>
+			<stop  offset="0.9004" style="stop-color:#C8A500"/>
+			<stop  offset="0.9093" style="stop-color:#DECA00"/>
+			<stop  offset="0.9175" style="stop-color:#F8F400"/>
+			<stop  offset="0.9195" style="stop-color:#FFFF00"/>
+			<stop  offset="0.9399" style="stop-color:#FDFD00"/>
+			<stop  offset="0.9519" style="stop-color:#F8F400"/>
+			<stop  offset="0.9618" style="stop-color:#F0E600"/>
+			<stop  offset="0.9705" style="stop-color:#E3D200"/>
+			<stop  offset="0.9784" style="stop-color:#D3B800"/>
+			<stop  offset="0.9858" style="stop-color:#C09800"/>
+			<stop  offset="0.9927" style="stop-color:#A87200"/>
+			<stop  offset="0.9991" style="stop-color:#8E4700"/>
+			<stop  offset="1" style="stop-color:#8A4000"/>
+		</radialGradient>
+		<path mask="url(#XMLID_9_)" fill="url(#XMLID_10_)" d="M46.5,10.259c19.984,0,36.245,16.257,36.245,36.24
+			c0,19.984-16.261,36.241-36.245,36.241c-19.983,0-36.242-16.257-36.242-36.241C10.258,26.516,26.517,10.259,46.5,10.259
+			 M46.5,4.901c-22.973,0-41.6,18.624-41.6,41.598c0,22.975,18.627,41.597,41.6,41.597c22.977,0,41.6-18.622,41.6-41.597
+			C88.1,23.525,69.477,4.901,46.5,4.901L46.5,4.901z"/>
+		<g>
+			<linearGradient id="XMLID_11_" gradientUnits="userSpaceOnUse" x1="24.5967" y1="20.2852" x2="68.2378" y2="72.5468">
+				<stop  offset="0" style="stop-color:#DBDBDB"/>
+				<stop  offset="0.4737" style="stop-color:#E7E7E7"/>
+				<stop  offset="1" style="stop-color:#F0F0F0"/>
+			</linearGradient>
+			<circle fill="url(#XMLID_11_)" cx="46.417" cy="46.416" r="34.044"/>
+		</g>
+		<linearGradient id="XMLID_12_" gradientUnits="userSpaceOnUse" x1="23.2837" y1="18.7065" x2="69.6057" y2="74.1786">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.1389" style="stop-color:#F6F6F6"/>
+			<stop  offset="0.3634" style="stop-color:#DEDEDE"/>
+			<stop  offset="0.6454" style="stop-color:#B8B8B8"/>
+			<stop  offset="0.9712" style="stop-color:#828282"/>
+			<stop  offset="1" style="stop-color:#7D7D7D"/>
+		</linearGradient>
+		<path fill="url(#XMLID_12_)" d="M46.445,14.117c17.826,0,32.329,14.501,32.329,32.325c0,17.825-14.503,32.328-32.332,32.328
+			c-17.824,0-32.328-14.503-32.328-32.328C14.114,28.618,28.619,14.117,46.445,14.117 M46.445,10.311
+			c-19.958,0-36.136,16.176-36.136,36.132c0,19.954,16.178,36.135,36.136,36.134c19.958,0,36.134-16.18,36.134-36.134
+			C82.579,26.486,66.403,10.311,46.445,10.311L46.445,10.311z"/>
+	</g>
+	<polygon fill="#535353" points="42.952,36.866 42.942,46.416 42.931,55.966 34.652,51.165 26.374,46.365 34.662,41.616 	"/>
+	<polygon fill="#535353" points="64.186,37.034 64.176,46.583 64.167,56.132 55.885,51.332 47.608,46.531 55.897,41.783 	"/>
+</g>
+</svg>
