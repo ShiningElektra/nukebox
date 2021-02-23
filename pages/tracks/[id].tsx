@@ -37,7 +37,6 @@ export default function Track() {
       <footer>
         <>
           <ReactionPlayer />
-          {/* <PlayerBar track={track} /> */}
           <AudioPlayer track={track} />
         </>
       </footer>
