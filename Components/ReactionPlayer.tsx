@@ -1,31 +1,30 @@
 import styles from "../styles/ReactionPlayer.module.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 type Props = { id: string };
 
 export default function ReactionPlayer({ id }: Props) {
-  const [like, setLike] = useState(null);
+  // const [like, setLike] = useState(null);
+
   // const [favorite, setFavorite] = useState(false);
 
   // const LikeButton = () => {
   //   setLike(!like);
   // };
 
-  useEffect(() => {
-    if (like === null) {
-      return;
-    }
-    if (like && id) {
-      localStorage.setItem("favoriteSong", id);
-    }
-    if (!like && id) {
-      localStorage.removeItem("favoriteSong");
-    }
-  }, [like]);
+  const [likes, setLikes] = useLocalStorage<string[]>("likes", []);
 
-  useEffect(() => {
-    setLike(id === localStorage.getItem("favoriteSong"));
-  }, [id]);
+  const like = likes.includes(id);
+
+  const handleFavoriteClick = () => {
+    if (like) {
+      const newLikes = likes.filter((like) => like !== id);
+      setLikes(newLikes);
+    } else {
+      setLikes([...likes, id]);
+    }
+  };
 
   return (
     <div className={styles.reaction}>
@@ -36,7 +35,7 @@ export default function ReactionPlayer({ id }: Props) {
       />
       <img
         className={styles.like}
-        onClick={() => setLike(!like)}
+        onClick={handleFavoriteClick}
         src={!like ? "/Like_Icon.svg" : "/Liked.svg"}
       />
       <img className={styles.volume} src="/Volume_Icon.svg" onClick={null} />
