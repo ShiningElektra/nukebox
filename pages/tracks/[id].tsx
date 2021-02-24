@@ -5,12 +5,12 @@ import TrackPlayer from "../../Components/TrackPlayer";
 import HeaderPlayer from "../../Components/HeaderPlayer";
 import styles from "../../styles/Player.module.css";
 import ReactionPlayer from "../../Components/ReactionPlayer";
-import PlayerBar from "../../Components/PlayerBar";
 import AudioPlayer from "../../Components/AudioPlayer";
 
 export default function Track() {
   const router = useRouter();
-  const { id } = router.query;
+  const { id: queryId } = router.query;
+  const id = typeof queryId === "string" ? queryId : queryId[0];
 
   const [track, setTrack] = useState<APITrack>(null);
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function Track() {
       </main>
       <footer>
         <>
-          <ReactionPlayer />
+          <ReactionPlayer id={id} />
           <AudioPlayer track={track} />
         </>
       </footer>
