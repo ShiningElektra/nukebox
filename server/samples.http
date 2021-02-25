@@ -1,0 +1,11 @@
+###GET HTML of index page
+GET http://localhost:3000
+
+### Get all tracks
+GET http://localhost:3000/api/tracks
+
+### GET a single track
+GET http://localhost:3000/api/tracks/BlackEyedPeas_BomBoomPow
+
+### DELETE a single Track
+DELETE http://localhost:3000/api/tracks/BlackEyedPeas_BomBoomPow
