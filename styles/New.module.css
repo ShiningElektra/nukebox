@@ -1,0 +1,20 @@
+.form {
+  display: grid;
+  justify-content: space-around;
+  grid-gap: 0.5em;
+  padding: 2em 2em;
+}
+.form input {
+  background: var(--background-color);
+  color: var(--primary-text);
+  font-size: 1.2em;
+}
+
+.name {
+  display: block;
+  font-size: 0.9em;
+  margin: 0;
+}
+.submitButton {
+  margin-top: 1em;
+}

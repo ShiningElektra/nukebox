@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { postTrack } from "../utils/api";
+import styles from "../styles/New.module.css";
 
 function AddTrack() {
   const [id, setId] = useState("");
@@ -22,44 +23,47 @@ function AddTrack() {
     postTrack(NewTrack);
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
+      <p className={styles.name}>Add a new Track</p>
       <label>
-        ID
-        <input
-          value={id}
-          onChange={(event) => setId(event.target.value)}
-          readOnly
-        />
-      </label>
-      <label>
-        Image
-        <input
-          value={image}
-          onChange={(event) => setImage(event.target.value)}
-        />
-      </label>
-      <label>
-        Title
         <input
           value={title}
+          placeholder="Title"
           onChange={(event) => setTitle(event.target.value)}
         />
       </label>
       <label>
-        Artist
         <input
           value={artist}
+          placeholder="Artist"
           onChange={(event) => setArtist(event.target.value)}
         />
       </label>
       <label>
-        Audio
         <input
           value={audio}
+          placeholder="Audio Url"
           onChange={(event) => setAudio(event.target.value)}
         />
       </label>
-      <input type="submit" />
+      <label>
+        <input
+          value={image}
+          placeholder="Image Url"
+          onChange={(event) => setImage(event.target.value)}
+        />
+      </label>
+      <label>
+        <input
+          value={id}
+          placeholder="ID"
+          onChange={(event) => setId(event.target.value)}
+          readOnly
+        />
+      </label>
+      <button className={styles.submitButton} onClick={handleSubmit}>
+        Add it!
+      </button>
     </form>
   );
 }
