@@ -27,3 +27,11 @@ export async function deleteTrack(id: string) {
   });
   return;
 }
+
+export async function postTrack(NewTrack: APITrack) {
+  return await fetch("/api/tracks", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(NewTrack),
+  });
+}

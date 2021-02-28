@@ -35,6 +35,11 @@ export default function Home() {
       </Head>
       <Greeting name="Elektra" />
       <ul className={styles.list}>{trackItems}</ul>
+      <Link href={`/new/`}>
+        <button>
+          <img src="/AddButton.svg" />
+        </button>
+      </Link>
     </div>
   );
 }
