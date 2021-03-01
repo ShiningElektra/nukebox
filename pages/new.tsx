@@ -9,12 +9,10 @@ function AddTrack() {
   const [artist, setArtist] = useState("");
   const [audio, setAudio] = useState("");
 
+  // automatisches Erstellen der Id
   useEffect(() => {
-    setId(
-      `${artist.replaceAll(" ", "-").toLowerCase()}_${title
-        .replaceAll(" ", "-")
-        .toLowerCase()}`
-    );
+    const getId = `${artist}_${title}`.replaceAll(" ", "-").toLowerCase();
+    setId(getId);
   }, [artist, title]);
 
   function handleSubmit(event) {
@@ -29,6 +27,7 @@ function AddTrack() {
         <input
           value={title}
           placeholder="Title"
+          required
           onChange={(event) => setTitle(event.target.value)}
         />
       </label>
@@ -36,6 +35,7 @@ function AddTrack() {
         <input
           value={artist}
           placeholder="Artist"
+          required
           onChange={(event) => setArtist(event.target.value)}
         />
       </label>
@@ -43,6 +43,7 @@ function AddTrack() {
         <input
           value={audio}
           placeholder="Audio Url"
+          required
           onChange={(event) => setAudio(event.target.value)}
         />
       </label>
