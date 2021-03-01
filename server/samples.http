@@ -1,0 +1,24 @@
+###GET HTML of index page
+GET http://localhost:3000
+
+### Get all tracks
+GET http://localhost:3000/api/tracks
+
+### GET a single track
+GET http://localhost:3000/api/tracks/BlackEyedPeas_BomBoomPow
+
+### DELETE a single track
+DELETE http://localhost:3000/api/tracks/BlackEyedPeas_BomBoomPow
+
+### POST a new track
+
+POST http://localhost:3000/api/tracks
+Content-Type: application/json
+
+{
+    "id": "BlackEyedPeas_BomBoomPow",
+    "image": "/BlackEyedPeas_BomBoomPow.jfif",
+    "title": "Bom Boom Pow",
+    "artist": "Black Eyed Peas",
+    "audio": "/Black Eyed Peas - Bom Boom Pow.mp3"
+}

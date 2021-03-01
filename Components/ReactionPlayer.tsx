@@ -1,6 +1,7 @@
 import styles from "../styles/ReactionPlayer.module.css";
 import React from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { deleteTrack } from "../utils/api";
 
 type Props = { id: string };
 
@@ -39,6 +40,9 @@ export default function ReactionPlayer({ id }: Props) {
         src={!like ? "/Like_Icon.svg" : "/Liked.svg"}
       />
       <img className={styles.volume} src="/Volume_Icon.svg" onClick={null} />
+      <button className={styles.delete} onClick={() => deleteTrack(id)}>
+        Delete ❌
+      </button>
     </div>
   );
 }
